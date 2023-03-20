@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KRA PAYE Calculator</title>
+    <link rel="stylesheet" href="kra.css">
+
+</head>
+<body>
+
+
+
+	<h1 style=>PAYE Calculator</h1>
+
+
+
+	<form>
+
+		<label for="basicSalary">Basic Salary:</label>
+		<input type="number" id="basicSalary" name="basicSalary" required>
+
+		<label for="benefits">Benefits(allowances):</label>
+		<input type="number" id="benefits" name="benefits" required>
+
+		<input type="button" value="Calculate" onclick="calculateIndividualNetSalary()">
+		<div class="output">
+			<label for="gross">Gross Salary</label>
+			<input type="text" id="gross" name="gross" readonly>
+
+
+			<label for="nssfContribution">NSSF Contribution</label>
+			<input type="text" id="nssf" name="nssfContribution" readonly>
+
+            <label for="taxIncome">Taxable Income</label>
+			<input type="text" id="taxableIncome" name="taxIncome" readonly>
+
+			<label for="personalRelief">Personal Relief</label>
+			<input type="text" id="personalRelief" name="personalRelief" readonly>
+
+            <label for="payeTax">PAYE Tax</label>
+			<input type="text" id="payeTax" name="payeTax" readonly>
+
+            <label for="deductions">Deductions</label>
+			<input type="text" id="deductions" name="deductions" readonly>
+
+
+            <label for="nhifContribution">NHIF Contribution</label>
+			<input type="text" id="nhif" name="nhifContribution" readonly>
+
+            <label for="netPay">Net Salary</label>
+			<input type="text" id="netpay" name="netPay" readonly>
+		</div>
+	</form>
+</body>
+
+<script src="kra.js"></script>
+
+</html>
